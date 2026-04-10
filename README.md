@@ -38,6 +38,24 @@ Enforce: PreToolUse hook on git push.
 One root cause fixed. Three future symptoms prevented.
 ```
 
+**The deeper problem no one talks about:**
+```
+Even good rules don't work.
+
+You write "always ask before pushing to public repos" in memory.
+Claude reads it. Claude "knows" it. Claude ignores it anyway.
+
+Why? Because memory rules are suggestions. The AI treats them
+as context, not constraints. There's no enforcement.
+
+Vibe-tuning generates actual enforcement scripts:
+- PreToolUse hooks that fire BEFORE dangerous commands
+- Checks that physically block the action until confirmed
+- Not "please remember" but "you literally cannot skip this"
+
+Rules = suggestions. Scripts = enforcement.
+```
+
 ## How It Works
 
 You see a wrong result. You tell the AI. It runs the review itself:
