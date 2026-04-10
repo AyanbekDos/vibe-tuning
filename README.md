@@ -16,18 +16,26 @@ npx skills add AyanbekDos/vibe-tuning
 
 **Without vibe-tuning:**
 ```
-Day 1: AI pushes personal data to public repo. You yell. Redo manually.
-Day 4: AI writes README in wrong language. You yell. Redo manually.
-Day 7: AI overwrites your config. You yell. Redo manually.
-Same mistakes. Every week. Forever.
+AI pushes personal data to public repo.
+Auto-memory saves: "don't push personal data."
+Next week: AI pushes .env with API keys.
+Auto-memory saves: "don't push .env files."
+Next week: AI pushes config with server IPs.
+
+Each symptom gets patched. The root cause is never found.
+You're patching holes on a sinking ship.
 ```
 
 **With vibe-tuning:**
 ```
-Day 1: AI pushes personal data → vibe-tune → rule saved → never repeats
-Day 4: AI writes wrong language → vibe-tune → rule saved → never repeats
-Day 7: AI overwrites config → vibe-tune → rule saved → never repeats
-Each mistake happens exactly once.
+AI pushes personal data to public repo.
+Vibe-tuning: "Why?"
+Root cause: I optimize for speed over correctness on irreversible actions.
+           I never asked what you wanted to publish.
+Fix: Before any irreversible action → correctness mode, confirm with user.
+Enforce: PreToolUse hook on git push.
+
+One root cause fixed. Three future symptoms prevented.
 ```
 
 ## How It Works
